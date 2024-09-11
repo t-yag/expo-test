@@ -4285,6 +4285,11 @@ expo-font@~12.0.10, expo-font@~12.0.9:
   dependencies:
     fontfaceobserver "^2.1.0"
 
+expo-haptics@~13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/expo-haptics/-/expo-haptics-13.0.1.tgz#35679c7fde4ae1c21ae3bc2d2cb34c266049dc2c"
+  integrity sha512-qG0EOLDE4bROVT3DtUSyV9g3iB3YFu9j3711X7SNNEnBDXc+2/p3wGDPTnJvPW0ao6HG3/McAOrBQA5hVSdWng==
+
 expo-keep-awake@~13.0.2:
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-13.0.2.tgz#5ef31311a339671eec9921b934fdd90ab9652b0e"
@@ -6297,6 +6302,23 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-react-native@6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-6.7.0.tgz#ef783af4224dcb4bc88a96de688e13d41104f511"
+  integrity sha512-doiF/36LaKkzo0XkgUIK8egxALNY6jGjCI4szpRuwop15LTW3DFtIA2L3pusNdaH7oM797aSH5UylIJw2k+Hgw==
+
+lottie-react@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/lottie-react/-/lottie-react-2.4.0.tgz#f7249eee2b1deee70457a2d142194fdf2456e4bd"
+  integrity sha512-pDJGj+AQlnlyHvOHFK7vLdsDcvbuqvwPZdMlJ360wrzGFurXeKPr8SiRCjLf3LrNYKANQtSsh5dz9UYQHuqx4w==
+  dependencies:
+    lottie-web "^5.10.2"
+
+lottie-web@^5.10.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.12.2.tgz#579ca9fe6d3fd9e352571edd3c0be162492f68e5"
+  integrity sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==
 
 lru-cache@^10.0.1, lru-cache@^10.2.0:
   version "10.4.3"
