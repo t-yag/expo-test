@@ -4,19 +4,19 @@
  */
 
 // const tintColor = '#0a7ea4';
-const tintColor = '#fff';
+const tintColor = "#fff";
 
 export const Colors = {
   // text: '#11181C',
-  text: '#fff',
+  text: "#fff",
   // background: '#fff',
-  background: '#1e2124',
-  headerBackGround: '#424549',
-  tabBarBackGround: '#424549',
+  background: "#1e2124",
+  headerBackGround: "#424549",
+  tabBarBackGround: "#424549",
   tint: tintColor,
   // icon: '#687076',
-  icon: '#fff',
+  icon: "#fff",
   // tabIconDefault: '#687076',
-  tabIconDefault: '#fff',
+  tabIconDefault: "#fff",
   tabIconSelected: tintColor,
 };
