@@ -1,26 +1,27 @@
-import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { HelloWave } from '@/components/HelloWave';
 import { StyledText } from '@/components/StyledText';
 import { Colors } from '@/constants/Colors';
-import { Link } from 'expo-router';
+import {Href, Link} from 'expo-router';
 
 export default function HomeScreen() {
   return (
-    <View style={{flex: 1, backgroundColor: Colors.background}}>
-      <SafeAreaView>
-        <View style={styles.titleContainer}>
-          <StyledText type="title">Welcome!</StyledText>
-          <HelloWave />
-        </View>
-        <View style={styles.stepContainer}>
-          <StyledText type="subtitle">Router</StyledText>
-          <Link href="/animation" asChild>
-            <Text style={{ color: '#0a7ea4' }}>
-              AnimationPage
-            </Text>
-          </Link>
-        </View>
-      </SafeAreaView>
+    <View style={{flex: 1, backgroundColor: Colors.background, padding: 10}}>
+      <View style={styles.titleContainer}>
+        <StyledText type="title">Welcome!</StyledText>
+        <HelloWave />
+      </View>
+      <View style={{ margin: 20 }} />
+      {[{path: '/animation', title: 'AnimationPage'},
+        {path: '/push', title: 'PushNotificationPage'},
+        {path: '/modal', title: 'ModalWindow'}
+      ].map((link) => (
+        <Link key={link.title} style={{marginVertical: 10}} href={link.path as  Href<string | object>} asChild>
+          <Text style={{ fontSize: 18, color: '#0a7ea4' }}>
+            {link.title}
+          </Text>
+        </Link>
+      ))}
     </View>
   );
 }
